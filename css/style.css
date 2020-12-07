@@ -1,0 +1,72 @@
+/* global styles */
+h1, h2, h3, h4 {
+    color: #037843;
+}
+
+.btn-primary {
+    border: none;
+    background-image: linear-gradient(45deg, #037843, #8FC742);
+}
+    .btn-primary:hover {
+        background-image: linear-gradient(45deg, #8FC742,  #037843);
+    }
+
+
+/* navigation */
+.navbar {
+    background-color: #fff !important;
+    border-bottom: 2px solid #037843;
+}
+
+    .nav-link, .navbar-light, .navbar-nav {
+        color: #037843 !important;
+    }
+        .email-link {
+            background-color: #037843;
+            color: #FFF !important;
+        }
+
+    .logo {
+        height: 86px;
+        width: 86px;
+    }
+
+/* landing page */
+.landing-carousel {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+    .landing-carousel .carousel-item, .landing-carousel .carousel-inner {
+        height: 100%;
+    }
+
+/* services */
+.services-carousel {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #FFF;
+    box-shadow: 10px 10px 20px #F4F4F4;
+    position: absolute;
+    top: 500px;
+    left: 10%;
+}
+    .services-carousel-inner {
+        background-color: inherit;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .py-auto {
+        padding: 10% 0;
+    }
+
+    .next-icon, .prev-icon {
+        padding: 15px;
+        background-color: #8FC742 !important;
+    }
