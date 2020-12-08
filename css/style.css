@@ -10,7 +10,33 @@ h1, h2, h3, h4 {
     .btn-primary:hover {
         background-image: linear-gradient(45deg, #8FC742,  #037843);
     }
+.w-80 {
+    width: 80% !important;
+}
+.w-30 {
+    width: 30% !important;
+}
 
+.g-color {
+    color: #037843;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    text-indent: 0;
+    display: inline-block;
+}
+    .icon:hover {
+        color: #037843;
+        background-color: #FFF;
+    }
 
 /* navigation */
 .navbar {
@@ -22,14 +48,25 @@ h1, h2, h3, h4 {
         color: #037843 !important;
     }
         .email-link {
-            background-color: #037843;
+            background-image: linear-gradient(45deg, #8FC742, #037843);
             color: #FFF !important;
+            padding: 5px 20px !important;
         }
+            .email-link:hover {
+                background-image: linear-gradient(45deg,#037843, #8FC742);
+            }
 
     .logo {
-        height: 86px;
-        width: 86px;
+        height: 50px;
+        width: 50px;
     }
+
+    .dropdown-item {
+        color: #037843;
+    }
+        .dropdown-item:focus {
+            background-color: #90c7429d;
+        }
 
 /* landing page */
 .landing-carousel {
@@ -51,9 +88,8 @@ h1, h2, h3, h4 {
     margin: 0 auto;
     background-color: #FFF;
     box-shadow: 10px 10px 20px #F4F4F4;
-    position: absolute;
-    top: 500px;
-    left: 10%;
+    position: relative;
+    top: -100px;
 }
     .services-carousel-inner {
         background-color: inherit;
@@ -70,3 +106,129 @@ h1, h2, h3, h4 {
         padding: 15px;
         background-color: #8FC742 !important;
     }
+
+/* fixed background */
+.fixed-bg {
+    background-image: url('../img/bg3.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    height: 300px;
+    color: #FFF;
+    position: relative;
+    top: -50px;
+}
+    .dark-bg {
+        background-color: #037843a1;
+    }
+    .fixed-bg h1, .fixed-bg a {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+/* testimonial */
+.testimonial {
+    background-color: #FFF;
+    width: 80%;
+    box-shadow: 10px 20px 5px #F4F4F4;
+}   
+    .t-h2 {
+        background-image: linear-gradient(45deg, #8FC742,  #037843) !important;
+    }
+    .t-head {
+        width: 100%;
+        height: 80px;
+        background-image: linear-gradient(45deg,#8FC742,  #037843);
+    }
+    .t-img {
+        height: 90px;
+        width: 90px;
+        border-radius: 100%;
+        border: 4px solid #FFF;
+        background-image: url('../img/dat.jpg');
+        margin: 0 auto;
+        position: relative;
+        top: -45px;
+    }
+    .t-body {
+        position: relative;
+        top: -45px;
+    }
+    .t-name span {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .t-rating .fa {
+        color: #037843;
+    }
+    .t-title span {
+        font-weight: bold;
+    }
+    .t-body hr {
+        border-top: 2px solid #037843;
+        width: 80%;
+    }
+    .fa-quote-left {
+        font-size: 40px;
+        color: #037843;
+    }
+
+/* footer */
+footer {
+    border-top: 2px solid #037843;
+    padding: 20px 0;
+    margin-top: 50px;
+    background-image: linear-gradient(75deg, #8FC742 60%, #037843);
+    color: #FFF;
+}
+    /* .fa {
+        color: #037843;
+    }
+        .fa:hover {
+            color: #FFF;
+        } */
+    footer a {
+        color: #FFF;
+        margin-right: 20px;
+    }
+        footer a:hover {
+            color: #037843;
+            background-color: #FFF;
+        }
+    footer p .fa {
+        color: #FFF;
+        margin-right: 5px;
+    }
+
+    a.icon {
+        font-size: 15px;
+    }
+
+
+/* media queries */
+@media screen and (max-width: 800px) {
+    /* overide max width */
+    .w-30, .w-80, .w-50 {
+        width: 95% !important;
+    }
+
+    .services-carousel {
+        max-width: 95%;
+        top: -50px;
+    }
+    .py-auto {
+        padding: 5% 0;
+    }
+
+    .next-icon, .prev-icon {
+        padding: 10px;
+    }
+
+    /* testimonials */
+    .testimonial {
+        width: 95%;
+    }
+        .t-body hr {
+            border-top: 1px solid #037843;
+            width: 70% !important;
+        }
+}
